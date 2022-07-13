@@ -5,6 +5,7 @@ const addToQueue = (value) => {
   orderList.push(value);
 };
 
+// eslint-disable-next-line no-unused-vars
 const calculateQueue = (value) => {
   if (input !== 0) {
     input = parseFloat(input);
@@ -55,6 +56,7 @@ const calculateQueue = (value) => {
   }
 };
 
+// eslint-disable-next-line no-unused-vars
 const numericButton = (key) => {
   if (
     document.getElementById("answer").innerHTML === "ERROR" ||
@@ -69,6 +71,7 @@ const numericButton = (key) => {
   }
 };
 
+// eslint-disable-next-line no-unused-vars
 const operatorButton = (key) => {
   if (input !== 0 && input !== "-") {
     input = parseFloat(input);
