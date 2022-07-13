@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-alert */
 const numberArray = [];
 const resultados = [];
 
@@ -46,6 +48,7 @@ function execute() {
   if (numberArray.length > 1) {
     showResult();
   }
+  // eslint-disable-next-line no-use-before-define
   confirmacion();
 }
 
