@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="viewport-fit=cover", width="device-width", initial-scale=1.0, minimun-scale=1.0, maximum-scale=1.0, user-scalable="no">
+        <link href="style.css" rel="stylesheet">
+        <script src="calculator.js"></script>
+        <title>My calculator</title>
+    </head>
+    <body>
+        <div id="calculatorBody"> 
+            <div>  <input id="AC" type="button" onclick="clearAll()" value="AC"/> <span id="answer">0</span>    </div>
+              <div class="row">           
+            </div>
+              <div class="row" id="row1">
+                  <input type="button" onclick="numericButton('7')" value="7"/>
+                  <input type="button" onclick="numericButton('8')" value="8"/>
+                  <input type="button"  onclick="numericButton('9')" value="9"/>
+                  <input type="button" onclick="operatorButton('+')" value="+"/>
+            </div>
+              <div class="row" id="row2">
+                  <input type="button"  onclick="numericButton('4')" value="4"/>
+                  <input type="button" onclick="numericButton('5')" value="5"/>
+                  <input type="button"  onclick="numericButton('6')" value="6"/>
+                <input type="button" onclick="operatorButton('-')" value="-"/>
+            </div>
+              <div class="row" id="row3">
+                  <input type="button"  onclick="numericButton('1')" value="1"/>
+                  <input type="button"  onclick="numericButton('2')" value="2"/>
+                  <input type="button"  onclick="numericButton('3')" value="3"/>
+                  <input type="button" onclick="operatorButton('*')" value="*"/>
+            </div>
+              <div class="row" id="row4">
+                 <input type="button"  onclick="numericButton('0')" value="0"/>
+                 <input type="button" onclick="numericButton('.')" value="."/>
+                 <input id="equals" type="button"  onclick="calculateQueue(orderList)" value="="/>
+                 <input type="button" onclick="operatorButton('/')" value="/"/>
+            </div>
+            </div>
+            
+    </body>
+
+</html>
